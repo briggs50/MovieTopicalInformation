@@ -1,6 +1,12 @@
-﻿body {
+﻿@font-face {
+	font-family: CaviarDreams;
+	src: url('../fonts/CaviarDreams.ttf') format('truetype');
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family:CaviarDreams;
 }
 
 /* Set padding to keep content from hitting the edges */
