@@ -38,7 +38,11 @@ namespace briggs50_MovieTopicalInformation.DAL
 
         public Movie SelectOne(int id)
         {
-            throw new NotImplementedException();
+
+            Movie selectedMovie = movies.Where(p => p.Id == id).FirstOrDefault();
+
+            return selectedMovie;
+
         }
 
         public void Update(Movie movie)

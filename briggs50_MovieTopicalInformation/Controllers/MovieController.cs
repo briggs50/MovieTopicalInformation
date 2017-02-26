@@ -96,7 +96,15 @@ namespace briggs50_MovieTopicalInformation.Controllers
         // GET: Movie/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            MovieRepository movieRepository = new MovieRepository();
+            Movie movie = new Movie();
+
+            using (movieRepository)
+            {
+                movie = movieRepository.SelectOne(id);
+            }
+
+            return View(movie);
         }
 
         // GET: Movie/Create
