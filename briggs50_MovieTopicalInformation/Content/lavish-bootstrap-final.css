@@ -4191,8 +4191,8 @@ a.badge:hover, a.badge:focus {
   cursor: pointer; }
 
 .jumbotron {
-  padding: 30px 15px;
-  margin-bottom: 30px;
+  padding: 20px 15px;
+  margin-bottom: 20px;
   color: inherit;
   background-color: #F29716; }
   .jumbotron h1,
@@ -4210,7 +4210,7 @@ a.badge:hover, a.badge:focus {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     .jumbotron {
-      padding: 48px 0; }
+      padding: 38px 0; }
       .container .jumbotron, .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
