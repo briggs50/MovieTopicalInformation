@@ -1,12 +1,14 @@
 ﻿@font-face {
-	font-family: CaviarDreams;
-	src: url('../fonts/CaviarDreams.ttf') format('truetype');
+	font-family: cookies&milk-regular;
+	src: url('../fonts/cookies&milk-regular.ttf') format('truetype');
 }
+
+
 
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    font-family:CaviarDreams;
+    font-family:cookies&milk-regular;
 }
 
 /* Set padding to keep content from hitting the edges */
