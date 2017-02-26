@@ -1,4 +1,5 @@
-﻿using System;
+﻿using briggs50_MovieTopicalInformation.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +17,11 @@ namespace briggs50_MovieTopicalInformation
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
+
+        protected void Session_Start()
+        {
+            Session["movies"] = InitializeSeedData.GetAllMovies();
         }
     }
 }
