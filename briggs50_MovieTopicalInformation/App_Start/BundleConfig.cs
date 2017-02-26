@@ -25,7 +25,7 @@ namespace briggs50_MovieTopicalInformation
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/lavish-bootstrap.css",
+                      "~/Content/lavish-bootstrap-final.css",
                       "~/Content/site.css"));
         }
     }
