@@ -81,14 +81,18 @@
                 </td>
 
                 <td>
-                    @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |*@
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
                     @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @*@Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
                 </td>
 
             </tr>
         }
 
     </table>
+
+    <div class="form-group">
+        <input type="button" class="btn" value="Add a Movie" onclick="location.href='@Url.Action("Create", "Movie")'" />
+    </div>
 </body>
 </html>

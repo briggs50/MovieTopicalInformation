@@ -107,68 +107,107 @@ namespace briggs50_MovieTopicalInformation.Controllers
             return View(movie);
         }
 
-        // GET: Movie/Create
+        [HttpGet]
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Movie/Create
+
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Movie movie)
         {
             try
             {
-                // TODO: Add insert logic here
+                MovieRepository movieRepository = new MovieRepository();
+
+                using (movieRepository)
+                {
+                    movieRepository.Insert(movie);
+                }
 
                 return RedirectToAction("Index");
             }
             catch
             {
+                // TODO Add view for error message
                 return View();
             }
         }
 
+
+
         // GET: Movie/Edit/5
+
+        [HttpGet]
         public ActionResult Edit(int id)
         {
-            return View();
+            MovieRepository movieRepository = new MovieRepository();
+            Movie movie = new Movie();
+
+            using (movieRepository)
+            {
+                movie = movieRepository.SelectOne(id);
+            }
+
+            return View(movie);
         }
 
         // POST: Movie/Edit/5
+
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Movie movie)
         {
             try
             {
-                // TODO: Add update logic here
+                MovieRepository movieRepository = new MovieRepository();
+
+                using (movieRepository)
+                {
+                    movieRepository.Update(movie);
+                }
 
                 return RedirectToAction("Index");
             }
             catch
             {
+                // TODO Add view for error message
                 return View();
             }
         }
-
         // GET: Movie/Delete/5
+        [HttpGet]
         public ActionResult Delete(int id)
         {
-            return View();
+            MovieRepository movieRepository = new MovieRepository();
+            Movie movie = new Movie();
+
+            using (movieRepository)
+            {
+                movie = movieRepository.SelectOne(id);
+            }
+
+            return View(movie);
         }
 
-        // POST: Movie/Delete/5
+
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(int id, Movie movie)
         {
             try
             {
-                // TODO: Add delete logic here
+                MovieRepository movieRepository = new MovieRepository();
+
+                using (movieRepository)
+                {
+                    movieRepository.Delete(id);
+                }
 
                 return RedirectToAction("Index");
             }
             catch
             {
+                // TODO Add view for error message
                 return View();
             }
         }

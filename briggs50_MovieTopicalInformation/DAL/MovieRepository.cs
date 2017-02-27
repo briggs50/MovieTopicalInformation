@@ -8,27 +8,12 @@ namespace briggs50_MovieTopicalInformation.DAL
 {
     public class MovieRepository : IMovieRepository, IDisposable
     {
-        private IEnumerable<Movie> movies;
 
-        // when we create this object fill breweries with
+        private IList<Movie> movies;
+
         public MovieRepository()
         {
-            movies = (IEnumerable<Movie>)HttpContext.Current.Session["movies"];
-        }
-
-        public void Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Dispose()
-        {
-            movies = null;
-        }
-
-        public void Insert(Movie movie)
-        {
-            throw new NotImplementedException();
+            movies = HttpContext.Current.Session["Movies"] as IList<Movie>;
         }
 
         public IEnumerable<Movie> SelectAll()
@@ -38,16 +23,44 @@ namespace briggs50_MovieTopicalInformation.DAL
 
         public Movie SelectOne(int id)
         {
-
             Movie selectedMovie = movies.Where(p => p.Id == id).FirstOrDefault();
 
             return selectedMovie;
+        }
+
+        public void Insert(Movie movie)
+        {
+            movies.Add(movie);
+        }
+
+        public void Update(Movie UpdateMovie)
+        {
+            var oldMovie = movies.Where(b => b.Id == UpdateMovie.Id).FirstOrDefault();
+
+            if (oldMovie != null)
+            {
+                movies.Remove(oldMovie);
+                movies.Add(UpdateMovie);
+            }
+        }
+
+        public void Delete(int id)
+        {
+            var movie = movies.Where(b => b.Id == id).FirstOrDefault();
+            if (movie != null)
+            {
+                movies.Remove(movie);
+            }
+        }
+
+        public void Save()
+        {
 
         }
 
-        public void Update(Movie movie)
+        public void Dispose()
         {
-            throw new NotImplementedException();
+            movies = null;
         }
     }
 }
