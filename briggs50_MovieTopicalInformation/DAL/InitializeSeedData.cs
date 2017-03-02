@@ -20,7 +20,7 @@ namespace briggs50_MovieTopicalInformation.DAL
                 Category = "Action",
                 LeadingActor = "Bradley Cooper",
                 Director = "Clint Eastwood",
-                MoviePoster = "Images\americansniper150x223.jpg"
+                MoviePoster = "Images/americansniper150x223.jpg"
             });
 
             movies.Add(new Movie
@@ -31,7 +31,7 @@ namespace briggs50_MovieTopicalInformation.DAL
                 Category = "Fantasy",
                 LeadingActor = "Cary Elwes",
                 Director = "Rob Reiner",
-                MoviePoster = "Images\theprincessbride150x225.jpg"
+                MoviePoster = "Images/theprincessbride150x225.jpg"
             });
 
             movies.Add(new Movie
@@ -42,7 +42,7 @@ namespace briggs50_MovieTopicalInformation.DAL
                 Category = "Comedy",
                 LeadingActor = "Heath Ledger",
                 Director = "Gil Junger",
-                MoviePoster = "Images\10things150x225.jpg"
+                MoviePoster = "Images/tenthings150x225.jpg"
             });
 
             movies.Add(new Movie
@@ -53,7 +53,7 @@ namespace briggs50_MovieTopicalInformation.DAL
                 Category = "Animation",
                 LeadingActor = "Jodi Benson",
                 Director = "Ron Clements",
-                MoviePoster = "Images\thelittlemermaid150x218.jpg"
+                MoviePoster = "Images/thelittlemermaid150x218.jpg"
             });
 
             movies.Add(new Movie

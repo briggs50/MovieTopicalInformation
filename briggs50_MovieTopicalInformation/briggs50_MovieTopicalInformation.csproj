@@ -137,7 +137,7 @@
     </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Images\10things150x225.jpg" />
+    <Content Include="Images\tenthings150x225.jpg" />
     <Content Include="Images\americansniper150x223.jpg" />
     <Content Include="Images\hiddenfigures150x286.jpg" />
     <Content Include="Content\lavish-bootstrap-final.css" />
