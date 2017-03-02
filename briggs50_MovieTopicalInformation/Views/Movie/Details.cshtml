@@ -45,6 +45,14 @@
             <dd>
                 @Html.DisplayFor(model => model.Director)
             </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.MoviePoster)
+            </dt>
+
+            <dd>
+                <img src="~/@Html.DisplayFor(model => model.MoviePoster)" />
+            </dd>
         </dl>
     </div>
     <p>

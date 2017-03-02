@@ -132,14 +132,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Movie.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\hiddenfigures150x286.jpg" />
+    <Content Include="Images\10things150x225.jpg" />
+    <Content Include="Images\americansniper150x223.jpg" />
+    <Content Include="Images\hiddenfigures150x286.jpg" />
     <Content Include="Content\lavish-bootstrap-final.css" />
-    <Content Include="DAL\Movie.xml" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\thelittlemermaid150x218.jpg" />
+    <Content Include="Images\theprincessbride150x225.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\cookies&amp;milk-regular.ttf" />
@@ -175,9 +181,7 @@
     <Content Include="Views\Movie\Delete.cshtml" />
     <Content Include="Views\Movie\Create.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />

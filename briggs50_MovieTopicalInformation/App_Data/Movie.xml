@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata">
+  
+  <Movie>
+    <Id>1</Id>
+    <Title>American Sniper</Title>
+    <Year>2014</Year>
+    <Category>Action</Category>
+    <LeadingActor>Bradley Cooper</LeadingActor>
+    <Director>Clint Eastwood</Director>
+  </Movie>
+
+  <Movie>
+    <Id>2</Id>
+    <Title>The Princess Bride</Title>
+    <Year>1987</Year>
+    <Category>Fantasy</Category>
+    <LeadingActor>Cary Elwes</LeadingActor>
+    <Director>Rob Reiner</Director>
+  </Movie>
+
+  <Movie>
+    <Id>3</Id>
+    <Title>10 Things I Hate About You</Title>
+    <Year>1999</Year>
+    <Category>Comedy</Category>
+    <LeadingActor>Heath Ledger</LeadingActor>
+    <Director>Gil Junger</Director>
+  </Movie>
+
+  <Movie>
+    <Id>4</Id>
+    <Title>The Little Mermaid</Title>
+    <Year>1989</Year>
+    <Category>Animation</Category>
+    <LeadingActor>Jodi Benson</LeadingActor>
+    <Director>Ron Clements</Director>
+  </Movie>
+
+  <Movie>
+    <Id>5</Id>
+    <Title>The Hidden Figures</Title>
+    <Year>2016</Year>
+    <Category>Biography</Category>
+    <LeadingActor>Teraji P. Henson</LeadingActor>
+    <Director>Theodore Melfi</Director>
+  </Movie>

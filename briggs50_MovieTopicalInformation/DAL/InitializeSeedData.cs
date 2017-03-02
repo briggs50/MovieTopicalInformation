@@ -20,6 +20,7 @@ namespace briggs50_MovieTopicalInformation.DAL
                 Category = "Action",
                 LeadingActor = "Bradley Cooper",
                 Director = "Clint Eastwood",
+                MoviePoster = "Images\americansniper150x223.jpg"
             });
 
             movies.Add(new Movie
@@ -30,6 +31,7 @@ namespace briggs50_MovieTopicalInformation.DAL
                 Category = "Fantasy",
                 LeadingActor = "Cary Elwes",
                 Director = "Rob Reiner",
+                MoviePoster = "Images\theprincessbride150x225.jpg"
             });
 
             movies.Add(new Movie
@@ -40,6 +42,7 @@ namespace briggs50_MovieTopicalInformation.DAL
                 Category = "Comedy",
                 LeadingActor = "Heath Ledger",
                 Director = "Gil Junger",
+                MoviePoster = "Images\10things150x225.jpg"
             });
 
             movies.Add(new Movie
@@ -49,7 +52,8 @@ namespace briggs50_MovieTopicalInformation.DAL
                 Year = 1989,
                 Category = "Animation",
                 LeadingActor = "Jodi Benson",
-                Director = "Clint Eastwood",
+                Director = "Ron Clements",
+                MoviePoster = "Images\thelittlemermaid150x218.jpg"
             });
 
             movies.Add(new Movie
@@ -60,6 +64,7 @@ namespace briggs50_MovieTopicalInformation.DAL
                 Category = "Biography",
                 LeadingActor = "Teraji P. Henson",
                 Director = "Theodore Melfi",
+                MoviePoster = "Images/hiddenfigures150x286.jpg"
             });
 
             return movies;
