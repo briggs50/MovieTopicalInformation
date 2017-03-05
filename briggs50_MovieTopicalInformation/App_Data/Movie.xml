@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<movies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Movies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Movie>
     <Id>2</Id>
     <Title>The Princess Bride</Title>
@@ -32,7 +32,7 @@
     <Title>American Sniper</Title>
     <Year>2014</Year>
     <Category>Action</Category>
-    <LeadingActor>Bradley Coope</LeadingActor>
+    <LeadingActor>Bradley Cooper</LeadingActor>
     <Director>Clint Eastwood</Director>
   </Movie>
-</movies>
+</Movies>

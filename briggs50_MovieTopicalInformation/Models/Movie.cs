@@ -11,10 +11,18 @@ namespace briggs50_MovieTopicalInformation.Models
         public int Id { get; set; }
 
         [Required]
-        public string Title { get; set; }        
+        public string Title { get; set; }
+
+        [Required]
         public int Year { get; set; }
+
+        [Required]
         public string Category { get; set; }
+
+        [Required]
         public string LeadingActor { get; set; }
+
+        [Required]
         public string Director { get; set; }
 
         public string MoviePoster { get; set; }
