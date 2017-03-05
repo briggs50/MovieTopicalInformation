@@ -9,11 +9,16 @@ namespace briggs50_MovieTopicalInformation.DAL
     public class MovieRepository : IMovieRepository, IDisposable
     {
 
-        private IList<Movie> movies;
+        private List<Movie> movies;
 
         public MovieRepository()
         {
-            movies = HttpContext.Current.Session["Movies"] as IList<Movie>;
+            MovieXMLDataService movieXmlDataService = new MovieXMLDataService();
+
+            using (movieXmlDataService)
+            {
+                movies = movieXmlDataService.Read() as List<Movie>;
+            }
         }
 
         public IEnumerable<Movie> SelectAll()
@@ -42,6 +47,8 @@ namespace briggs50_MovieTopicalInformation.DAL
                 movies.Remove(oldMovie);
                 movies.Add(UpdateMovie);
             }
+
+            Save();
         }
 
         public void Delete(int id)
@@ -51,11 +58,18 @@ namespace briggs50_MovieTopicalInformation.DAL
             {
                 movies.Remove(movie);
             }
+
+            Save();
         }
 
         public void Save()
         {
+            MovieXMLDataService movieXmlDataService = new MovieXMLDataService();
 
+            using (movieXmlDataService)
+            {
+                movieXmlDataService.Write(movies);
+            }
         }
 
         public void Dispose()

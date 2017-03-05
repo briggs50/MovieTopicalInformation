@@ -122,16 +122,23 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MovieController.cs" />
+    <Compile Include="DAL\IMovieDataService.cs" />
     <Compile Include="DAL\IMovieRepository.cs" />
     <Compile Include="DAL\InitializeSeedData.cs" />
     <Compile Include="DAL\MovieRepository.cs" />
+    <Compile Include="DAL\MovieXMLDataService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IAppBuilder.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Movies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Movie _org.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Data\Movie.xml">
       <SubType>Designer</SubType>
     </Content>

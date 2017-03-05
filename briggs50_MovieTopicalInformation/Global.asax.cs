@@ -17,11 +17,12 @@ namespace briggs50_MovieTopicalInformation
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Application["dataFilePath"] = HttpContext.Current.Server.MapPath("~/App_Data/Movie.xml");
         }
 
         protected void Session_Start()
         {
-            Session["movies"] = InitializeSeedData.GetAllMovies();
+            Session["Movies"] = InitializeSeedData.GetAllMovies();
         }
     }
 }
