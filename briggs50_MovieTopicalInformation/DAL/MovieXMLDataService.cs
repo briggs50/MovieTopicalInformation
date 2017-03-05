@@ -48,7 +48,7 @@ namespace briggs50_MovieTopicalInformation.DAL
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+           
         }
     }
 }

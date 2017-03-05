@@ -9,7 +9,7 @@ namespace briggs50_MovieTopicalInformation.DAL
     public class MovieRepository : IMovieRepository, IDisposable
     {
 
-        private List<Movie> movies;
+        private List<Movie> _movies;
 
         public MovieRepository()
         {
@@ -17,46 +17,54 @@ namespace briggs50_MovieTopicalInformation.DAL
 
             using (movieXmlDataService)
             {
-                movies = movieXmlDataService.Read() as List<Movie>;
+                _movies = movieXmlDataService.Read() as List<Movie>;
             }
         }
 
+
         public IEnumerable<Movie> SelectAll()
         {
-            return movies;
+            return _movies;
         }
 
         public Movie SelectOne(int id)
         {
-            Movie selectedMovie = movies.Where(p => p.Id == id).FirstOrDefault();
+            //Brewery selectedBrewery =
+            //(from brewery in _breweries
+            // where brewery.Id == id
+            // select brewery).FirstOrDefault();
+
+            Movie selectedMovie = _movies.Where(p => p.Id == id).FirstOrDefault();
 
             return selectedMovie;
         }
 
         public void Insert(Movie movie)
         {
-            movies.Add(movie);
-        }
-
-        public void Update(Movie UpdateMovie)
-        {
-            var oldMovie = movies.Where(b => b.Id == UpdateMovie.Id).FirstOrDefault();
-
-            if (oldMovie != null)
-            {
-                movies.Remove(oldMovie);
-                movies.Add(UpdateMovie);
-            }
+            _movies.Add(movie);
 
             Save();
         }
 
+        public void Update(Movie UpdateMovie)
+        {
+            var oldMovie = _movies.Where(b => b.Id == UpdateMovie.Id).FirstOrDefault();
+
+            if (oldMovie != null)
+            {
+                _movies.Remove(oldMovie);
+                _movies.Add(UpdateMovie);
+            }
+
+            Save();
+        }
         public void Delete(int id)
         {
-            var movie = movies.Where(b => b.Id == id).FirstOrDefault();
+            var movie = _movies.Where(b => b.Id == id).FirstOrDefault();
+
             if (movie != null)
             {
-                movies.Remove(movie);
+                _movies.Remove(movie);
             }
 
             Save();
@@ -64,17 +72,17 @@ namespace briggs50_MovieTopicalInformation.DAL
 
         public void Save()
         {
-            MovieXMLDataService movieXmlDataService = new MovieXMLDataService();
+            MovieXMLDataService breweryXmlDataService = new MovieXMLDataService();
 
-            using (movieXmlDataService)
+            using (breweryXmlDataService)
             {
-                movieXmlDataService.Write(movies);
+                breweryXmlDataService.Write(_movies);
             }
         }
 
         public void Dispose()
         {
-            movies = null;
+            _movies = null;
         }
     }
 }
