@@ -33,7 +33,7 @@
 
             <div class="form-group">
                 <input type="submit" value="Find Movies" class="btn col-md-2 col-md-offset-2" />
-                <input type="button" value="Reset Movies" onclick="location.href='@Url.Action("Index", "Movie")'" class="btn col-md-2 col-md-offset-2" />
+                <input type="button" value="Reset Movies" onclick="location.href='@Url.Action("Index", "User")'" class="btn col-md-2 col-md-offset-2" />
             </div>
 
         </div>
@@ -79,9 +79,8 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Director)
                 </td>
-
                 <td>
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) 
                 </td>
 
             </tr>
@@ -90,7 +89,7 @@
     </table>
 
     <div class="form-group">
-        <input type="button" class="btn" value="Add a Movie" onclick="location.href='@Url.Action("Create", "Movie")'" />
+        <input type="button" class="btn" value="Add a Movie" onclick="location.href='@Url.Action("Create", "User")'" />
     </div>
 </body>
 </html>

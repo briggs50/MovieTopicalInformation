@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Movies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Movie>
+    <Id>1</Id>
+    <Title>American Sniper</Title>
+    <Year>2014</Year>
+    <Category>Action</Category>
+    <LeadingActor>Bradley Cooper</LeadingActor>
+    <Director>Clint Eastwood</Director>
+    <MoviePoster>Images/americansniper150x223.jpg</MoviePoster>
+  </Movie>
+  <Movie>
     <Id>2</Id>
     <Title>The Princess Bride</Title>
     <Year>1987</Year>
     <Category>Fantasy</Category>
     <LeadingActor>Cary Elwes</LeadingActor>
     <Director>Rob Reiner</Director>
-    <MoviePoster>src="Images/theprincessbride150x225.jpg"</MoviePoster>
+    <MoviePoster>Images/theprincessbride150x225.jpg</MoviePoster>
   </Movie>
   <Movie>
     <Id>4</Id>
@@ -16,7 +25,7 @@
     <Category>Animation</Category>
     <LeadingActor>Jodi Benson</LeadingActor>
     <Director>Ron Clements</Director>
-    <MoviePoster>src="Images/tenthings150x225.jpg"</MoviePoster>
+    <MoviePoster>Images/tenthings150x225.jpg</MoviePoster>
   </Movie>
   <Movie>
     <Id>5</Id>
@@ -25,14 +34,15 @@
     <Category>Biography</Category>
     <LeadingActor>Teraji P. Henso</LeadingActor>
     <Director>Theodore Melfi</Director>
-    <MoviePoster>src="Images/thelittlemermaid150x218.jpg"</MoviePoster>
+    <MoviePoster>Images/thelittlemermaid150x218.jpg</MoviePoster>
   </Movie>
   <Movie>
-    <Id>1</Id>
-    <Title>American Sniper</Title>
-    <Year>2014</Year>
-    <Category>Action</Category>
-    <LeadingActor>Bradley Cooper</LeadingActor>
-    <Director>Clint Eastwood</Director>
+    <Id>3</Id>
+    <Title>10 Things I Hate About You</Title>
+    <Year>1999</Year>
+    <Category>Comedy</Category>
+    <LeadingActor>Heath Ledger</LeadingActor>
+    <Director>Gil Junger</Director>
+    <MoviePoster>Images/tenthings150x225.jpg</MoviePoster>
   </Movie>
 </Movies>

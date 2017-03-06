@@ -38,7 +38,7 @@ namespace briggs50_MovieTopicalInformation.DAL
             string xmlFilePath = HttpContext.Current.Application["dataFilePath"].ToString();
             StreamWriter sWriter = new StreamWriter(xmlFilePath, false);
 
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Movie>), new XmlRootAttribute("movies"));
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Movie>), new XmlRootAttribute("Movies"));
 
             using (sWriter)
             {

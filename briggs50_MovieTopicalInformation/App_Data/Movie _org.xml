@@ -7,7 +7,7 @@
     <Category>Action</Category>
     <LeadingActor>Bradley Cooper</LeadingActor>
     <Director>Clint Eastwood</Director>
-    <MoviePoster>src="Images/americansniper150x223.jpg"</MoviePoster>
+    <MoviePoster>Images/americansniper150x223.jpg</MoviePoster>
   </Movie>
   <Movie>
     <Id>2</Id>
@@ -16,7 +16,7 @@
     <Category>Fantasy</Category>
     <LeadingActor>Cary Elwes</LeadingActor>
     <Director>Rob Reiner</Director>
-    <MoviePoster>src="Images/theprincessbride150x225.jpg"</MoviePoster>
+    <MoviePoster>Images/theprincessbride150x225.jpg</MoviePoster>
   </Movie>
   <Movie>
     <Id>4</Id>
@@ -25,7 +25,7 @@
     <Category>Animation</Category>
     <LeadingActor>Jodi Benson</LeadingActor>
     <Director>Ron Clements</Director>
-    <MoviePoster>src="Images/tenthings150x225.jpg"</MoviePoster>
+    <MoviePoster>Images/tenthings150x225.jpg</MoviePoster>
   </Movie>
   <Movie>
     <Id>5</Id>
@@ -34,7 +34,7 @@
     <Category>Biography</Category>
     <LeadingActor>Teraji P. Henso</LeadingActor>
     <Director>Theodore Melfi</Director>
-    <MoviePoster>src="Images/thelittlemermaid150x218.jpg"</MoviePoster>
+    <MoviePoster>Images/thelittlemermaid150x218.jpg</MoviePoster>
   </Movie>
   <Movie>
     <Id>3</Id>
@@ -43,5 +43,6 @@
     <Category>Comedy</Category>
     <LeadingActor>Heath Ledger</LeadingActor>
     <Director>Gil Junger</Director>
+    <MoviePoster>Images/tenthings150x225.jpg</MoviePoster>
   </Movie>
 </Movies>
