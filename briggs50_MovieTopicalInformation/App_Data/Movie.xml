@@ -19,13 +19,23 @@
     <MoviePoster>Images/theprincessbride150x225.jpg</MoviePoster>
   </Movie>
   <Movie>
+    <Id>3</Id>
+    <Title>10 Things I Hate About You</Title>
+    <Year>1999</Year>
+    <Category>Comedy</Category>
+    <LeadingActor>Heath Ledge</LeadingActor>
+    <Director>Gil Junger</Director>
+    <MoviePoster>Images/tenthings150x225.jpg</MoviePoster>
+  </Movie>
+</Movies>
+  <Movie>
     <Id>4</Id>
     <Title>The Little Mermaid</Title>
     <Year>1989</Year>
     <Category>Animation</Category>
     <LeadingActor>Jodi Benson</LeadingActor>
     <Director>Ron Clements</Director>
-    <MoviePoster>Images/tenthings150x225.jpg</MoviePoster>
+    <MoviePoster>Images/thelittlemermaid150x218.jpg</MoviePoster>
   </Movie>
   <Movie>
     <Id>5</Id>
@@ -34,15 +44,5 @@
     <Category>Biography</Category>
     <LeadingActor>Teraji P. Henso</LeadingActor>
     <Director>Theodore Melfi</Director>
-    <MoviePoster>Images/thelittlemermaid150x218.jpg</MoviePoster>
+    <MoviePoster>Images/hiddenfigures150x286.jpg</MoviePoster>
   </Movie>
-  <Movie>
-    <Id>3</Id>
-    <Title>10 Things I Hate About You</Title>
-    <Year>1999</Year>
-    <Category>Comedy</Category>
-    <LeadingActor>Heath Ledger</LeadingActor>
-    <Director>Gil Junger</Director>
-    <MoviePoster>Images/tenthings150x225.jpg</MoviePoster>
-  </Movie>
-</Movies>
